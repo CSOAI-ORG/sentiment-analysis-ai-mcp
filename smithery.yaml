@@ -1,0 +1,10 @@
+name: sentiment-analysis-ai-mcp
+description: "MEOK AI Labs — Sentiment Analysis tools for AI agents and LLMs"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp
+license: MIT
+categories: [NLP, Analytics]
+tags: [sentiment-analysis, opinion-mining, text-classification, nlp, emotion-detection]
+runtime: python
+entrypoint: server.py
