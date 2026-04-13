@@ -36,11 +36,11 @@ async def handle_list_tools() -> list[Tool]:
 async def handle_call_tool(name: str, arguments: Any | None) -> list[types.TextContent | types.ImageContent | types.EmbeddedResource]:
     args = arguments or {}
     if name == "analyze_sentiment":
-            text = args.get("text", "")
-            score = 0.5 + (text.count("good") - text.count("bad")) * 0.1
-            return [TextContent(type="text", text=json.dumps({"sentiment": "positive" if score > 0.5 else "negative", "score": round(min(max(score, 0.0), 1.0), 2)}, indent=2))]
-        if name == "detect_emotion":
-            return [TextContent(type="text", text=json.dumps({"emotions": ["happy"]}, indent=2))]
+        text = args.get("text", "")
+        score = 0.5 + (text.count("good") - text.count("bad")) * 0.1
+        return [TextContent(type="text", text=json.dumps({"sentiment": "positive" if score > 0.5 else "negative", "score": round(min(max(score, 0.0), 1.0), 2)}, indent=2))]
+    if name == "detect_emotion":
+        return [TextContent(type="text", text=json.dumps({"emotions": ["happy"]}, indent=2))]
     return [TextContent(type="text", text=json.dumps({"error": "Unknown tool"}, indent=2))]
 
 async def main():
