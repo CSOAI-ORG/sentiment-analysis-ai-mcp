@@ -1,21 +1,6 @@
 {
   "name": "sentiment-analysis-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Sentiment Analysis tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
-  "tools": [
-    "analyze_sentiment",
-    "detect_emotion"
-  ],
-  "categories": [
-    "NLP",
-    "Analytics"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+  "description": "Sentiment Analysis Ai Mcp \u2014 Analyze text sentiment with scoring and emotion detection.",
+  "version": "1.0.0",
+  "tools": []
 }
