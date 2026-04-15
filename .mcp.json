@@ -1,6 +1,6 @@
 {
   "name": "sentiment-analysis-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Analyse text sentiment, detect emotions, and compare tones. By MEOK AI Labs.",
+  "description": "Sentiment Analysis Ai MCP server. Tools: analyze sentiment, batch analyze, compare sentiments. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
