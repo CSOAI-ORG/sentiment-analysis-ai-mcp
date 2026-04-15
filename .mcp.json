@@ -1,24 +1,70 @@
 {
   "name": "sentiment-analysis-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Analyse text sentiment, detect emotions, and compare tones. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
       "name": "analyze_sentiment",
-      "description": "Analyze text sentiment",
+      "description": "Analyse the sentiment of a text. Returns score (0-1), label (positive/negative/neutral/mixed), and confidence.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
       }
     },
     {
-      "name": "detect_emotion",
-      "description": "Detect emotions in text",
+      "name": "batch_analyze",
+      "description": "Analyse sentiment for multiple texts at once. Provide texts separated by '|||' delimiter.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "texts": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "texts"
+        ]
+      }
+    },
+    {
+      "name": "compare_sentiments",
+      "description": "Compare the sentiment of two texts side by side.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text_a": {
+            "type": "string"
+          },
+          "text_b": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text_a",
+          "text_b"
+        ]
+      }
+    },
+    {
+      "name": "extract_emotions",
+      "description": "Detect emotions present in text. Returns detected emotions with intensity scores.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
       }
     }
   ]
