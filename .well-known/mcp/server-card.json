@@ -1,0 +1,53 @@
+{
+  "name": "sentiment-analysis-ai",
+  "description": "Analyse text sentiment, detect emotions, and compare tones. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "analyze_sentiment",
+      "description": "Analyse the sentiment of a text. Returns score (0-1), label (positive/negative/neutral/mixed), and confidence."
+    },
+    {
+      "name": "batch_analyze",
+      "description": "Analyse sentiment for multiple texts at once. Provide texts separated by '|||' delimiter."
+    },
+    {
+      "name": "compare_sentiments",
+      "description": "Compare the sentiment of two texts side by side."
+    },
+    {
+      "name": "extract_emotions",
+      "description": "Detect emotions present in text. Returns detected emotions with intensity scores."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Natural Language Processing"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
