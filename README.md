@@ -1,63 +1,38 @@
-# Sentiment Analysis Ai
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Analyse text sentiment, detect emotions, and compare tones. By MEOK AI Labs.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/sentiment-analysis-ai-mcp)](https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp/stargazers)
 
-Sentiment Analysis AI — analyse text sentiment, emotions, and tone at scale. MEOK AI Labs.
+# usentimentU analysisU aiU mcp
+
+**Sentiment Analysis AI — analyse text sentiment, emotions, and tone at scale. MEOK AI Labs.**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/sentiment-analysis-ai-mcp)](https://www.npmjs.com/package/@meok-ai/sentiment-analysis-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install sentiment-analysis-ai-mcp
+# or
+npm install -g @meok-ai/sentiment-analysis-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install sentiment-analysis-ai-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `analyze_sentiment`
-Analyse the sentiment of a text. Returns score (0-1), label (positive/negative/neutral/mixed), and confidence.
-
-**Parameters:**
-- `text` (str)
-
-### `batch_analyze`
-Analyse sentiment for multiple texts at once. Provide texts separated by '|||' delimiter.
-
-**Parameters:**
-- `texts` (str)
-
-### `compare_sentiments`
-Compare the sentiment of two texts side by side.
-
-**Parameters:**
-- `text_a` (str)
-- `text_b` (str)
-
-### `extract_emotions`
-Detect emotions present in text. Returns detected emotions with intensity scores.
-
-**Parameters:**
-- `text` (str)
-
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
-
-## Links
-
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/sentiment-analysis-ai-mcp](https://github.com/CSOAI-ORG/sentiment-analysis-ai-mcp)
-- **PyPI**: [pypi.org/project/sentiment-analysis-ai-mcp](https://pypi.org/project/sentiment-analysis-ai-mcp/)
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
