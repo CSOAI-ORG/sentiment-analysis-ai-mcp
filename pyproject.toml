@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "sentiment-analysis-ai-mcp"
-version = "1.0.0"
+version = "1.0.2"
 description = "Sentiment Analysis Ai MCP server. Tools: analyze sentiment, batch analyze, compare sentiments. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
