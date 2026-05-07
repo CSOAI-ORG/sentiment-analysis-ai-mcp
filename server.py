@@ -98,7 +98,23 @@ mcp = FastMCP("sentiment-analysis-ai", instructions="Analyse text sentiment, det
 
 @mcp.tool()
 def analyze_sentiment(text: str, api_key: str = "") -> str:
-    """Analyse the sentiment of a text. Returns score (0-1), label (positive/negative/neutral/mixed), and confidence."""
+    """Analyse the sentiment of a text. Returns score (0-1), label (positive/negative/neutral/mixed), and confidence.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -113,7 +129,23 @@ def analyze_sentiment(text: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def batch_analyze(texts: str, api_key: str = "") -> str:
-    """Analyse sentiment for multiple texts at once. Provide texts separated by '|||' delimiter."""
+    """Analyse sentiment for multiple texts at once. Provide texts separated by '|||' delimiter.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -146,7 +178,23 @@ def batch_analyze(texts: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def compare_sentiments(text_a: str, text_b: str, api_key: str = "") -> str:
-    """Compare the sentiment of two texts side by side."""
+    """Compare the sentiment of two texts side by side.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -172,7 +220,23 @@ def compare_sentiments(text_a: str, text_b: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def extract_emotions(text: str, api_key: str = "") -> str:
-    """Detect emotions present in text. Returns detected emotions with intensity scores."""
+    """Detect emotions present in text. Returns detected emotions with intensity scores.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
