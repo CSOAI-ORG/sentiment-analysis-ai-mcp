@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "sentiment-analysis-ai-mcp",
+    "description": "Sentiment Analysis Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "sentiment-analysis-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "analyze_sentiment",
+      "batch_analyze",
+      "compare_sentiments",
+      "extract_emotions"
+    ]
+  }
+}

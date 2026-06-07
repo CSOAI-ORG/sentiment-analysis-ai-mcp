@@ -1,0 +1,59 @@
+{
+  "name": "sentiment-analysis-ai-mcp",
+  "description": "Sentiment Analysis Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/sentiment-analysis-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "analyze_sentiment",
+      "name": "Analyze Sentiment",
+      "description": "analyze_sentiment via sentiment-analysis-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "batch_analyze",
+      "name": "Batch Analyze",
+      "description": "batch_analyze via sentiment-analysis-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "compare_sentiments",
+      "name": "Compare Sentiments",
+      "description": "compare_sentiments via sentiment-analysis-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "extract_emotions",
+      "name": "Extract Emotions",
+      "description": "extract_emotions via sentiment-analysis-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
