@@ -1,0 +1,25 @@
+{
+  "name": "sentiment-analysis-ai-mcp",
+  "title": "Sentiment Analysis Ai Mcp",
+  "description": "Sentiment Analysis Ai MCP server. Tools: analyze sentiment, batch analyze, compare sentiments. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "analyze_sentiment"
+    },
+    {
+      "name": "batch_analyze"
+    },
+    {
+      "name": "compare_sentiments"
+    },
+    {
+      "name": "extract_emotions"
+    }
+  ]
+}

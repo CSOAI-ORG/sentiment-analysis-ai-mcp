@@ -1,0 +1,9 @@
+# sentiment-analysis-ai-mcp - Auto-trigger Rules
+
+When the user asks about sentiment analysis, use sentiment-analysis-ai-mcp tools: analyze_sentiment, batch_analyze, compare_sentiments, extract_emotions
+
+**MCP server for sentiment analysis ai mcp operations**
+
+Install: `pip install sentiment-analysis-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

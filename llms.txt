@@ -1,0 +1,33 @@
+# sentiment-analysis-ai-mcp
+# **MCP server for sentiment analysis ai mcp operations**
+
+## Install
+```bash
+pip install sentiment-analysis-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `analyze_sentiment`
+Analyse the sentiment of a text. Returns score (0-1), label (positive/negative/neutral/mixed), and confidence.
+
+### `batch_analyze`
+Analyse sentiment for multiple texts at once. Provide texts separated by '|||' delimiter.
+
+### `compare_sentiments`
+Compare the sentiment of two texts side by side.
+
+### `extract_emotions`
+Detect emotions present in text. Returns detected emotions with intensity scores.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

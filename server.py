@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Sentiment Analysis AI — analyse text sentiment, emotions, and tone at scale. MEOK AI Labs."""
+"""
+Sentiment Analysis AI — analyse text sentiment, emotions, and tone at scale. MEOK AI Labs."""
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json
@@ -136,7 +136,7 @@ def analyze_sentiment(text: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     if not text.strip():
         return json.dumps({"error": "Text cannot be empty"})
@@ -186,7 +186,7 @@ def batch_analyze(texts: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     items = [t.strip() for t in texts.split("|||") if t.strip()]
     if not items:
@@ -255,7 +255,7 @@ def compare_sentiments(text_a: str, text_b: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     if not text_a.strip() or not text_b.strip():
         return json.dumps({"error": "Both texts must be non-empty"})
@@ -316,7 +316,7 @@ def extract_emotions(text: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     if not text.strip():
         return json.dumps({"error": "Text cannot be empty"})
@@ -341,5 +341,8 @@ def extract_emotions(text: str, api_key: str = "") -> str:
     }, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
